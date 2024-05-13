@@ -1,0 +1,148 @@
+html {
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-image: url('images/bg-pattern-bottom-desktop.svg');
+    background-image: url('images/bg-pattern-top-desktop.svg');
+    font-family: 'League Spartan', sans-serif;
+    height: 100%;
+    font-size: 16px;
+  }
+
+.wrapper {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+.cima, .baixo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 25px;
+}
+
+.text-pt1, .tittle {
+    color: hsl(300, 43%, 22%);
+    width: 50%;
+}
+.text-pt1 {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.tittle {
+    font-weight: 1000;
+    font-size: 60px;
+}
+.pt2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 23%;
+    top: 10%;
+}
+.star {
+    font-size: 18px;
+    align-items: center;
+    display: flex;
+    color: hsl(300, 43%, 22%);
+    font-weight: 800;
+    background-color: hsl(300, 24%, 96%);
+    margin: 3%;
+    padding: 23px;
+    border-radius: 12px;
+    width: 110%;
+}
+
+.star-2 {
+    margin-left: 20%;
+}
+.star-3 {
+    margin-left: 40%;
+}
+
+span {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.foto {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px; 
+    margin-right: 25px;
+}
+.name {
+    color: white;
+    font-weight: 400;
+}
+.textos {
+    color: white;
+    font-weight: 400;
+    line-height: 0.1;
+}
+
+.sub-name {
+    color: hsl(333, 80%, 67%);
+}
+.pt3, .pt4, .pt5{
+    max-width: 470px;
+    margin-bottom: auto;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 12px;
+}
+
+.textos {
+    margin-left: 30px;
+    line-height: 1.5;
+    max-width: 90%;
+    margin-bottom: 50px;
+}
+
+.pt4 {
+    margin-top: 2%;
+}
+
+.pt5 {
+    margin-top: 4%;
+}
+
+@media screen and (max-width: 800px) {
+    .cima, .baixo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pt3, .pt4, .pt5 {
+        padding: 8%;
+    }
+    .textos {
+        margin-right: 20px;
+    }
+    .tittle, .text-pt1 {
+        width: 90%; 
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .pt2 {
+        flex: 1;
+        width: 70%;
+    }
+
+    .star {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    .star-2, .star-3, .star-1{
+        margin-left: 20%;
+    }
+}
